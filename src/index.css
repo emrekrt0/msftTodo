@@ -1,0 +1,283 @@
+/* CSS Reset Baslangic */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #faf9f8;
+  font-family: "Segoe","Segoe UI","Arial","sans-serif";
+  font-size: 14px;
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+button {
+  background: none;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+ul {list-style: none; padding: 0;}
+a {text-decoration: none; color: inherit;}
+
+input {
+  border: none;
+  outline: none;
+}
+/* CSS Reset Bitis */
+.signUpBackground {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgb(64,2,9);
+  background: linear-gradient(90deg, rgba(64,2,9,0.5916473317865429) 0%, rgba(41,41,108,0.5452436194895591) 51%, rgba(0,255,221,0.4895591647331786) 100%);
+}
+
+  .signUpForm {
+  width: 500px;
+  height: 400px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 50px 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signUpForm h2 {
+  margin-bottom: 20px;
+}
+
+form>div input {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border-bottom: 1px solid #e1dfdd;
+  width: 100%;
+}
+.signUpForm .signUpPassword {
+  margin-bottom: 20px;
+}
+.signUpForm .signIn {
+  margin-bottom: 20px;
+}
+.signUpForm button {
+  background-color: #cac7c7;
+  padding: 10px 10px;
+  border-radius: 4px;
+  height: max-content;
+}
+.header {
+  min-height: 48px;
+  max-height: 48px;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  background-color: #2564cf;
+}
+
+.header img {
+  max-height: 16px;
+  max-width: 16px;
+}
+.header .header_left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.header .header_center {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header_center .header_text {
+  color: #fff;
+}
+.header .header_searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  background: #fff;
+  background: var(#fff);
+  margin: 8px auto;
+  height: 32px;
+}
+.header .header_searchbar input {
+  width: 400px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.header .header_center .header_userSettings img {
+  max-height: 16px;
+  max-width: 16px;
+}
+.header_userSettings>div{
+  padding: 16px 16px;
+}
+.header_center .header_userSettings {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+ .header_right {
+  display: flex;
+}
+ .header_right .header_user {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.leftNavBar {
+  background-color: #fff;
+  width: fit-content;
+  box-shadow: #2564cf;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.leftNavBar .lNavbar .lNavbarList {
+  width: 240px;
+}
+.leftNavBar .lNavbar {
+  padding: 10px 10px;
+}
+.leftNavBar .lNavbar .lNavbarList li {
+  display: flex;
+  gap: 10px;
+  flex: none;
+  padding: 15px 10px;
+  align-items: center;
+}
+.leftNavBar .splitter {
+  background-color: #e1dfdd;
+  height: 1px;
+  margin-bottom: 10px;
+}
+.leftNavBarBottom .officeButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#detail {
+  width: 100%;
+}
+#root .mainContent {
+  display: flex;
+}
+.mainContent .mainBackground {
+
+  max-width: 100%; 
+  margin-inline: auto; 
+  padding: 50px 50px;
+}
+
+
+.mainContent .mainBackground .addTaskParent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allow content to wrap */
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.mainBackground .importantHeader .importantHeader-title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.baseAdd {
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.baseAdd.addTask {
+  padding: 0px 16px;
+  min-height: 52px;
+}
+.baseAdd .baseAddInput-important {
+  width: 100%;
+}
+.choices {
+  border-top: solid 1px #edebe9;
+  background-color: #faf9f8;
+  display: flex;
+  justify-content: space-between;
+}
+.addTaskParent .choices .taskCreation-entrybar {
+  display: flex;
+  padding: 0px 16px;
+  min-height: 52px;
+}
+.choices .addButton-container button {
+  background-color: #cac7c7;
+  border: none;
+  outline: none;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+}
+.tasks .baseAdd ul {
+  width: 100%;
+} 
+
+.tasks .baseAdd ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-shadow {
+  box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.1);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
